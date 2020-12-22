@@ -18,79 +18,440 @@
        <div id="navbarContent" class="collapse navbar-collapse justify-content-center">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#presentation">Présentation</a>
+              <a class="nav-link" href="#ancre1">Présentation</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projets">Projets</a>
+              <a class="nav-link" href="#ancre2">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="#ancre3">Projets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ancre4">Contact</a>
             </li>
           </ul>
         </div>
     </nav>
 </div>
-<div class="container">
-	<div class="row">
-		<!--QUI SUIS JE-->
-		<div class="col-12">
-			<h1 id="presentation">Qui suis-je ?</h1><hr/>
+<img src="assets/img/fond/fond1.png" alt="fond" class="fond"/>
+<main>
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-6 portefolio">
+				<h1 class="titre"><span class="porte">Porte</span>folio</h1>
+				<p>Bienvenue sur mon portefolio !<br/>
+				Vous y retrouverez mon profil et mes projets de formation en développement web</p>
+			</div>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-12 col-lg-2"></div>
-		<div class="col-12 col-lg-4 presentation">
-			<!--présentation-->
-			<p class="prenom">Clarisse HURION</p>
-			<p class="plettrine"><span class="lettrine">J</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute 
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<div class="container">
+		<div class="row">
+			<!--QUI SUIS JE-->
+			<div class="col-12">
+				<h1 id="ancre1">Qui suis-je ?</h1><hr/>
+			</div>
 		</div>
-		<div class="col-12 col-lg-1"></div>
-		<!--réseaux sociaux-->
-		<div class="col-12 col-lg-3 reseaux">
-			<p>Me contacter sur les réseaux sociaux</p>
-			<p><a href=""><img src="assets/img/rs/instagram.png" alt="instagram" class="rs"/></a>
-			<a href=""><img src="assets/img/rs/twitter.png" alt="twitter" class="rs"/></a></p>
+		<div class="row">
+			<div class="col-12 col-lg-2"></div>
+			<div class="col-12 col-lg-4 presentation">
+				<!--présentation-->
+				<p class="prenom">Clarisse HURION</p>
+				<p class="plettrine"><span class="lettrine">J</span>e suis Clarisse, enchantée ! J'ai 22 ans et je suis actuellement en formation à Simplon pour pouvoir devenir développeuse web. Attirée depuis plusieurs années par le monde du numérique, je passe maintenant des heures entières à imaginer, maquetter et créer des sites web pour mener à bien tous les projets.</p>
+			</div>
+			<div class="col-12 col-lg-1"></div>
+			<!--réseaux sociaux-->
+			<div class="col-12 col-lg-3 reseaux">
+				<p>Me contacter sur les réseaux sociaux</p>
+				<p><a href=""><img src="assets/img/rs/instagram.png" alt="instagram" class="rs"/></a>
+				<a href=""><img src="assets/img/rs/twitter.png" alt="twitter" class="rs"/></a></p>
+			</div>
+			<div class="col-12 col-lg-2"></div>
 		</div>
-		<div class="col-12 col-lg-2"></div>
+		<div class="row">
+			<!--QUI SUIS JE-->
+			<div class="col-12">
+				<h1 id="ancre2">Mes compétences</h1><hr/>
+			</div>
+			<div class="col-12 col-md-4 sectionCompetence">
+				<p><img src="assets/img/competence/maquette.jpg" alt="icon" class="competence"/></p>
+				<div class="liste">
+					<ul>
+						<li>Illustrations</li>
+						<li>Maquette wireframe</li>
+						<li>Maquette mock-up</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-12 col-md-4 sectionCompetence">
+				<p><img src="assets/img/competence/code.png" alt="icon" class="competence"/></p>
+				<div class="liste">
+					<ul>
+						<li>Langage HTML & CSS</li>
+						<li>Langage Javascript</li>
+						<li>Bases de PHP</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-12 col-md-4 sectionCompetence">
+				<p><img src="assets/img/competence/logiciel.png" alt="icon" class="competence"/></p>
+				<div class="liste">
+					<ul>
+						<li>Affinity Designer</li>
+						<li>Sublime Text</li>
+						<li>Suite LibreOffice</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<!--QUI SUIS JE-->
+			<div class="col-12">
+				<h1 id="ancre3">Mes projets réalisés</h1><hr/>
+				<p>Trier par langage informatique :
+					<button data-category="html">HTML</button>
+					<button data-category="css">CSS</button>
+					<button data-category="js">Javascript</button>
+					<button data-category="php">PHP</button>
+					<button class="showall">Tout afficher</button>
+				</p>
+			</div>
+		</div>
+<div>
+	<div class="container">
+		<!--Premiere ligne de projets-->
+		<div class="row" id="p1">
+			<!--cv numérique-->
+			<div class="col-12 col-lg-6">			
+				<img src="assets/img/visuels/cv.png" alt="icon" class="imageVisuel"/>
+			</div>
+			<div class="col-12 col-lg-1"></div>
+			<div class="col-12 col-lg-5">
+					<div class="card html css">
+					<div class="card-body">
+						<h5 class="card-title">CV en ligne</h5>
+						<p class="card-text">Conception d'un curriculum vitae en ligne</p>
+						<!--bouton fenetre modale-->
+							<button type="button" data-toggle="modal" data-target="#cv" class="btn">Description</button>
+							<div class="modal" id="cv">
+								<div class="modal-dialog">
+					                <div class="modal-content">
+					                	<div class="modal-header">
+					                    	<h4 class="modal-title">Description</h4>
+					                  	</div>
+					                  	<div class="modal-body">
+					                      <img src="assets/img/visuels/cv.png" alt="image" class="image" width="100%">
+					                      <h2>Curriculum vitae</h2>
+					                    Mon premier projet correspond à la création d'un CV en ligne responsive, qui présente mon identité, mes compétences, mon expérience professionnelle, mes acquis et mes hobbies favoris.
+					                	</div>
+					                  	<div class="modal-footer">
+					                    <em>Projet 1</em>
+					                    <button type="button" class="btn" data-dismiss="modal">Fermer</button>
+					                  </div>
+					                </div>
+					            </div>
+	            			</div>
+	            			<!--fin fenetre modale-->
+	            		</div>
+					</div>
+				</div>
+			</div>
+			<!--jeu de l'escargot-->
+		<div class="row" id="p2">
+			<div class="col-12 col-lg-6">			
+				<img src="assets/img/visuels/escargot.png" alt="icon" class="imageVisuel"/>
+			</div>
+			<div class="col-12 col-lg-1"></div>
+			<div class="col-12 col-lg-5">
+				<div class="card html css">
+					<div class="card-body">
+						<h5 class="card-title">Jeu de l'escargot</h5>
+						<p class="card-text">Conception du jeu des escargots </p>
+						<!--bouton fenetre modale-->
+							<button type="button" data-toggle="modal" data-target="#escargot" class="btn">Description</button>
+							<div class="modal" id="escargot">
+								<div class="modal-dialog">
+					                <div class="modal-content">
+					                	<div class="modal-header">
+					                    	<h4 class="modal-title">Description</h4>
+					                  	</div>
+					                  	<div class="modal-body">
+					                      <img src="assets/img/visuels/escargot.png" alt="image" class="image" width="100%">
+					                      <h2>Jeu de l'escargot</h2>
+					                    Il s'agit de reproduire le jeu de l'escargot en créant un plateau de jeu, des escargots et un système de déplacement des pions afin que les escargots puissent franchir la ligne d'arrivée, ce qui créé une alerte pop up qui indique l'escargot gagnant. 
+					                	</div>
+					                  	<div class="modal-footer">
+					                    <em>Projet 2</em>
+					                    <button type="button" class="btn" data-dismiss="modal">Fermer</button>
+					                  </div>
+					                </div>
+					            </div>
+	            			</div>
+	            			<!--fin fenetre modale-->
+					</div>
+				</div>
+			</div>
+		</div>
+			<!--espace sécurisé-->
+		<div class="row" id="p3">
+			<div class="col-12 col-lg-6">			
+				<img src="assets/img/visuels/espaceSecurise.png" alt="icon" class="imageVisuel"/>
+			</div>
+			<div class="col-12 col-lg-1"></div>
+				<div class="col-12 col-lg-5">
+					<div class="card html css">
+						<div class="card-body">
+							<h5 class="card-title">Espace Sécurisé</h5>
+							<p class="card-text">Conception d'un formulaire</p>
+							<!--bouton fenetre modale-->
+							<button type="button" data-toggle="modal" data-target="#espace" class="btn">Description</button>
+							<div class="modal" id="espace">
+								<div class="modal-dialog">
+					                <div class="modal-content">
+					                	<div class="modal-header">
+					                    	<h4 class="modal-title">Description</h4>
+					                  	</div>
+					                  	<div class="modal-body">
+					                      <img src="assets/img/visuels/espaceSecurise.png" alt="image" class="image" width="100%">
+					                      <h2>Espace sécurisé</h2>
+					                    Le but de ce projet est de créer un formulaire qui permet de se login et se logout au site. Il a fallu créer une base de données, qui regroupe tous les noms d'utilisateurs et les mots de passe associés au compte. Le projet nécessitait ainsi de travailler du côté front-end (visuel du site) autant que du côté back-end (côté serveur).
+					                	</div>
+					                  	<div class="modal-footer">
+					                    <em>Projet 3</em>
+					                    <button type="button" class="btn" data-dismiss="modal">Fermer</button>
+					                  </div>
+					                </div>
+					            </div>
+	            			</div>
+	            			<!--fin fenetre modale-->
+						</div>
+					</div>
+				</div>
+		</div>
+		<!--escales-->
+		<div class="row" id="p5">
+			<div class="col-12 col-lg-6">			
+				<img src="assets/img/visuels/escales.png" alt="icon" class="imageVisuel"/>
+			</div>
+			<div class="col-12 col-lg-1"></div>
+				<div class="col-12 col-lg-5">
+					<div class="card html css">
+						<div class="card-body">
+							<h5 class="card-title">Escales</h5>
+							<p class="card-text">Conception d'un site vitrine</p>
+							<!--bouton fenetre modale-->
+							<button type="button" data-toggle="modal" data-target="#escales" class="btn">Description</button>
+							<div class="modal" id="escales">
+								<div class="modal-dialog">
+					                <div class="modal-content">
+					                	<div class="modal-header">
+					                    	<h4 class="modal-title">Description</h4>
+					                  	</div>
+					                  	<div class="modal-body">
+					                      <img src="assets/img/visuels/escales.png" alt="image" class="image" width="100%">
+					                      <h2>Escales</h2>
+					                    La conception d'un site vitrine sur les voyages s'est faite en groupe. Il a fallu créer un cahier des charges, une maquette wireframe puis celle mockup avant de commencer à coder. Le carousel défilant automatiquement montre toutes les destinations proposées par le site. Nous avons rajouté des onglets "qui sommes-nous ?", "promotions" et "contact" afin d'étayer le site. Les carrés en page accueil nous montre également la totalité des destinations que nous avons sélectionnées.
+					                	</div>
+					                  	<div class="modal-footer">
+					                    <em>Projet 5</em>
+					                    <button type="button" class="btn" data-dismiss="modal">Fermer</button>
+					                  </div>
+					                </div>
+					            </div>
+	            			</div>
+	            			<!--fin fenetre modale-->
+						</div>
+					</div>
+				</div>
+		</div>
+		<!--piccolino-->
+		<div class="row" id="p4">
+			<div class="col-12 col-lg-6">			
+				<img src="assets/img/visuels/piccolino.png" alt="icon" class="imageVisuel"/>
+			</div>
+			<div class="col-12 col-lg-1"></div>
+				<div class="col-12 col-lg-5">
+					<div class="card html css">
+						<div class="card-body">
+							<h5 class="card-title">Piccolino</h5>
+							<p class="card-text">Création d'un site vitrine</p>
+							<!--bouton fenetre modale-->
+							<button type="button" data-toggle="modal" data-target="#piccolino" class="btn">Description</button>
+							<div class="modal" id="piccolino">
+								<div class="modal-dialog">
+					                <div class="modal-content">
+					                	<div class="modal-header">
+					                    	<h4 class="modal-title">Description</h4>
+					                  	</div>
+					                  	<div class="modal-body">
+					                      <img src="assets/img/visuels/piccolino.png" alt="image" class="image" width="100%">
+					                      <h2>Piccolino</h2>
+					                    Le projet est basé sur de l'imitation. Il faut partir d'une maquette fournie au départ et construire le visuel du site au plus proche. Piccolino est un site de musique, qui présente les créateurs du site, un carousel, une map, un formulaire de contact, notamment. Il a fallu fournir une maquette wireframe avant de commencer à coder afin de discerner les différentes parties du site plus facilement. Le site a du être conçu en utilisant bootstrap.
+					                	</div>
+					                  	<div class="modal-footer">
+					                    <em>Projet 4</em>
+					                    <button type="button" class="btn" data-dismiss="modal">Fermer</button>
+					                  </div>
+					                </div>
+					            </div>
+	            			</div>
+	            			<!--fin fenetre modale-->
+						</div>
+					</div>
+				</div>
+		</div>
+			<!--komenkonfé-->
+		<div class="row" id="p6">
+			<div class="col-12 col-lg-6">			
+				<img src="assets/img/visuels/komenkonfe.png" alt="icon" class="imageVisuel"/>
+			</div>
+			<div class="col-12 col-lg-1"></div>
+				<div class="col-12 col-lg-5">
+					<div class="card html css">
+						<div class="card-body">
+							<h5 class="card-title">Visuels à reproduire</h5>
+							<p class="card-text">Conception de visuels divers</p>
+							<!--bouton fenetre modale-->
+							<button type="button" data-toggle="modal" data-target="#komenkonfe" class="btn">Description</button>
+							<div class="modal" id="komenkonfe">
+								<div class="modal-dialog">
+					                <div class="modal-content">
+					                	<div class="modal-header">
+					                    	<h4 class="modal-title">Description</h4>
+					                  	</div>
+					                  	<div class="modal-body">
+					                      <img src="assets/img/visuels/komenkonfe.png" alt="image" class="image" width="100%">
+					                      <h2>Visuels à reproduire</h2>
+					                    En utilisant exclusivement du HTML et du CSS il a fallu reproduire les visuels présentés par le fichier PDF qui nous a été fourni. Sept visuels ont été à reproduire, avec des éléments très divers, visuels de fenêtre pop-up, de boutons, de carousel. Il a fallu fournir un travail de recherches pour réussir à trouver les fonts utilisées.
+					                	</div>
+					                  	<div class="modal-footer">
+					                    <em>Projet 6</em>
+					                    <button type="button" class="btn" data-dismiss="modal">Fermer</button>
+					                  </div>
+					                </div>
+					            </div>
+	            			</div>
+	            			<!--fin fenetre modale-->
+						</div>
+					</div>
+				</div>
+		</div>
+		<!--quote generator-->
+		<div class="row" id="p7">
+			<div class="col-12 col-lg-6">			
+				<img src="assets/img/visuels/quote.png" alt="icon" class="imageVisuel"/>
+			</div>
+			<div class="col-12 col-lg-1"></div>
+			<div class="col-12 col-lg-5">
+				<div class="card html css">
+					<div class="card-body">
+						<h5 class="card-title">Générateur de citations aléatoires</h5>
+						<p class="card-text">Conception d'un "Random Quote Generator"</p>
+						<!--bouton fenetre modale-->
+							<button type="button" data-toggle="modal" data-target="#quote" class="btn">Description</button>
+							<div class="modal" id="quote">
+								<div class="modal-dialog">
+					                <div class="modal-content">
+					                	<div class="modal-header">
+					                    	<h4 class="modal-title">Description</h4>
+					                  	</div>
+					                  	<div class="modal-body">
+					                      <img src="assets/img/visuels/quote.png" alt="image" class="image" width="100%">
+					                      <h2>Générateur de citations aléatoires</h2>
+					                    Les codes HTML et CSS étaient fournis. Le but est de continuer à coder le javascript qui avait été commencé pour arriver à générer dans la fenêtre prévue à cet effet une citation et le nom de l'auteur qui lui est associé, de manière totalement aléatoire. En parallèle, la couleur du bouton, du fond de l'écran et de certaines écritures devaient changer également de manière aléatoires. Les couleurs et les citations ont été réparties dans des arrays pour arriver au résultat désiré.
+					                	</div>
+					                  	<div class="modal-footer">
+					                    <em>Projet 7</em>
+					                    <button type="button" class="btn" data-dismiss="modal">Fermer</button>
+					                  </div>
+					                </div>
+					            </div>
+	            			</div>
+	            			<!--fin fenetre modale-->
+					</div>
+				</div>
+			</div>
+		</div>
+			<!--javascript exos-->
+		<div class="row" id="p8">
+			<div class="col-12 col-lg-6">			
+				<img src="assets/img/visuels/javascript.png" alt="icon" class="imageVisuel"/>
+			</div>
+			<div class="col-12 col-lg-1"></div>
+			<div class="col-12 col-lg-5">
+				<div class="card html css">
+					<div class="card-body">
+						<h5 class="card-title">Exercices JS</h5>
+						<p class="card-text">Exercices du DOM et JS</p>
+						<!--bouton fenetre modale-->
+							<button type="button" data-toggle="modal" data-target="#javascript" class="btn">Description</button>
+							<div class="modal" id="javascript">
+								<div class="modal-dialog">
+					                <div class="modal-content">
+					                	<div class="modal-header">
+					                    	<h4 class="modal-title">Description</h4>
+					                  	</div>
+					                  	<div class="modal-body">
+					                      <img src="assets/img/visuels/javascript.png" alt="image" class="image" width="100%">
+					                      <h2>Exercices DOM et javascript</h2>
+					                    Des exercices divers nous ont été fournis afin de nous entraîner à repérer les éléments divers parents, enfants(...) qui constituent une page web pour les afficher dans la console et leur apporter quelques modifications par la suite. C'est une première approche du javascript et du DOM, qui serviront plus tard à rendre les pages web dynamiques.
+					                	</div>
+					                  	<div class="modal-footer">
+					                    <em>Projet 8</em>
+					                    <button type="button" class="btn" data-dismiss="modal">Fermer</button>
+					                  </div>
+					                </div>
+					            </div>
+	            			</div>
+	            			<!--fin fenetre modale-->
+					</div>
+				</div>
+			</div>
+		</div>
+			<!--komenkonfé-->
+		<div class="row" id="p9">
+			<div class="col-12 col-lg-6">			
+				<img src="assets/img/visuels/panierFrais.png" alt="icon" class="imageVisuel"/>
+			</div>
+			<div class="col-12 col-lg-1"></div>
+			<div class="col-12 col-lg-5">
+				<div class="card html css">
+					<div class="card-body">
+						<h5 class="card-title">Mon Panier Frais</h5>
+						<p class="card-text">Conception d'un site vitrine</p>
+						<!--bouton fenetre modale-->
+							<button type="button" data-toggle="modal" data-target="#panier" class="btn">Description</button>
+							<div class="modal" id="panier">
+								<div class="modal-dialog">
+					                <div class="modal-content">
+					                	<div class="modal-header">
+					                    	<h4 class="modal-title">Description</h4>
+					                  	</div>
+					                  	<div class="modal-body">
+					                      <img src="assets/img/visuels/panierFrais.png" alt="image" class="image" width="100%">
+					                      <h2>Mon Panier Frais</h2>
+					                    La création de ce site nous permet de mettre en application les exercices précédents sur le DOM et le javascript. Il était question de mettre en page des catégories de produits (légumes, fruits, confitures et boissons), proposés par Lise et Paul LARGE puis de créer à l'aide de javascript une gestion d'affichage par catégorie. Les boutons associés à chaque catégorie devaient afficher seulement la catégorie correspondante. Ainsi, en appuyant sur le bouton "légumes", nous avions seulement les légumes affichés, ainsi de suite. J'ai préféré utilisé bootstrap sur ce projet pour organiser mes éléments en cartes.
+					                	</div>
+					                  	<div class="modal-footer">
+					                    <em>Projet 5</em>
+					                    <button type="button" class="btn" data-dismiss="modal">Fermer</button>
+					                  </div>
+					                </div>
+					            </div>
+	            			</div>
+	            			<!--fin fenetre modale-->
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-	<div class="row">
-		<!--QUI SUIS JE-->
-		<div class="col-12">
-			<h1>Mes compétences</h1><hr/>
-			<p></p>
-		</div>
-		<div class="col-12 col-md-4 sectionCompetence">
-			<p><img src="assets/img/competence/maquette.jpg" alt="icon" class="competence"/></p>
-			<p class="liste">
-				<ul>
-					<li>Illustrations</li>
-					<li>Maquette wireframe</li>
-					<li>Maquette mock-up</li>
-					<li>Affinity Designer</li>
-				</ul>
-			</p>
-		</div>
-		<div class="col-12 col-md-4 sectionCompetence">
-			<p><img src="assets/img/competence/code.png" alt="icon" class="competence"/></p>
-			<p class="liste">
-				<ul>
-					<li>Langage HTML</li>
-					<li>Langage CSS</li>
-					<li>Langage Javascript</li>
-					<li>Bases de PHP</li>
-				</ul>
-			</p>
-		</div>
-		<div class="col-12 col-md-4 sectionCompetence">
-			<p><img src="assets/img/competence/code.png" alt="icon" class="competence"/></p>
-			<p class="liste">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exi officia deserunt mollit anim id est laborum.</p>
-		</div>
-	</div>
-	<hr/>
 </div>
+</main>
+
+<footer id="ancre4">
+	 <hr/>
+  	<p>Vous pouvez <a href="assets/img/competence/CV.pdf" target="_blank">télécharger mon cv en pdf</a></p>
+  	<p>M'envoyer un <a href="mailto:clarisse.hurion@gmail.com" role="button">mail</a></p>
+ </footer>
 
 	
 <!--Script-->

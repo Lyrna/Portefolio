@@ -15,46 +15,80 @@
 
 body{
 	font-family: "jost";
+	color: #373544;
 }
 
 hr{
-	margin-top:30px;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
+	margin-top: 10px;
 	width:150px;
 }
-/*titres*/
+/*grande image en tete*/
+.fond{
+	width: 100%;
+	height: auto;
+}
 
+/*portefolio texte bienvenue entrée du site*/
+
+.portefolio{ /*section portefolio et bienvenue*/
+	position: sticky;
+	margin-top: -25%;
+}
+
+/*titres*/
 h1{
 	text-align: center;
 	font-size: 2em;
 	font-family: "tabarra";
+	margin-top: 10px;
+	color: #69677A;
+	font-weight: bold;
+}
+/*PORTEFOLIO*/
+h1.titre{
+	text-align: left;
 }
 
-.container{
-	padding-top: 30px;
-	padding-bottom: 30px;
+/*ancre qui ne cache pas le titre*/
+h1[id^="ancre"] {
+padding-top: 120px;
+position: relative;
+top: -120px;
+margin-bottom: -100px;
 }
+
+/*general settings*/
 
 .row{
-	margin-left: 30px;
-	margin-right: 30px;
+	margin: 30px;
 }
 
 /*Barre de nav*/
 
 .nav{
 	font-family: "tabarraN";
-	background-color: rgba(10,37,64, 0.9);
+	background-color: rgba(11, 17, 80, 0.9);
 	text-transform: uppercase;
 }
 
 .nav-link{
 	text-align:center;
-	font-size: 1.3em;
+	font-size: 1.2em;
 	letter-spacing: 0.1em;
-	font-weight: normal !important;
 	margin-left: 10px;
 	margin-right: 10px;
+}
+
+nav a{
+	background: linear-gradient(to top, rgba(232, 161, 234, 1)0%, rgba(225, 97, 115, 1) 3px, transparent 4px) no-repeat !important;
+	background-size: 0% 100% !important;
+	transition: background-size .5s !important;
+	color: white !important;
+}
+
+nav a:hover{
+	background-size: 100% 100% !important;
 }
 
 /*Présentation*/
@@ -63,9 +97,9 @@ h1{
 	padding: 20px;
 }
 
-.prenom{
+.prenom{ /*mon identité*/
 	font-size: 1.5em;
-	color: #26BEC3;
+	color: grey;
 	font-weight: bold;
 }
 
@@ -76,16 +110,21 @@ h1{
 	margin-top:-5%;
 }
 
+p.plettrine{
+	margin-bottom: 20px;
+}
 
-.reseaux{
+
+.reseaux{ /*encadré des réseaux*/
 	background-color: none;
 	text-align: center;
 	align-self: center;
-	border:5px dotted #26BEC3;
+	border: 3px dotted #e8a1ea;
 	padding:20px;
+	margin-bottom: 30px;
 }
 
-.rs{
+.rs{ /*icones des réseaux*/
 	margin-left:10px;
 	margin-right:10px;
 	height:50px;
@@ -94,25 +133,113 @@ h1{
 
 /*Mes compétences*/
 
-.sectionCompetence{
+.sectionCompetence{ 
 	text-align: center;
 }
 
-.competence{
+.competence{ /*icones des compétences*/
 	height: 200px;
 	width: auto;
 }
 
-ul{
-	text-align: left;
+ul{ /*ul des compétences*/
 	list-style-type: none;
+	margin-bottom: 50px;
+	padding: 0;
 }
 
-li{
-	margin-bottom: 10px;
+li{ /*li des compétences*/
 	margin-top: 10px;
 }
 
+/*Cartes des projets*/
+/*boutons langage*/
+button{
+	border: none;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 5px;
+	margin-bottom: 15px;
+	color: grey;
+	font-weight: bold;
+	background: #E5E5E5;
+	border-radius: 5px;
+}
+
+button:hover{
+	background: #cbcbcd;
+	color: #64626C;
+}
+
+button:active{
+	background: #cbcbcd;
+	color: #64626C;
+}
+
+button:focus{
+	outline: none;
+}
+
+/*CARTES*/
+div.row[id^="p"]{
+	align-items: center;
+}
+
+.card{ /*carte*/
+	padding: 15px;
+	height: auto;
+	width: 100%;
+	background-color: white;
+	text-align: center;
+}
+
+.imageVisuel{ /*image du visuel de projet*/
+	height:auto;
+	width:100%;
+	align-self: center;
+}
+
+.card-title{ /*nom du projet*/
+	font-family: "tabarra";
+	font-size: 1.3em;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+/*Fenetres modales*/
+h2{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.modal-footer{
+	margin-top: 20px;
+}
+
+.card-body button  {
+	background-color: #E5E5E5;
+	color: grey;
+	font-weight: bold;
+}
+
+.card-body button:hover{
+	background-color: #CBCBCD;
+	color: #64626C;
+}
+
+/*footer*/
+
+footer{
+	text-align: center;
+	padding-bottom: 100px;
+	padding-top: 50px;
+}
+
+footer hr{
+	margin-top: 30px;
+	margin-bottom: 100px;
+}
 
 /*responsive*/
 
@@ -129,6 +256,10 @@ li{
 	.competence{
 	height: 300px;
 	width: auto;
+	}
+
+	.rs{
+		height: 80px;
 	}
 }
 
