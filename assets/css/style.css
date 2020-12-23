@@ -23,18 +23,33 @@ hr{
 	margin-top: 10px;
 	width:150px;
 }
+
+strong{
+	font-weight: normal;
+	color: #111C93;
+}
+
 /*grande image en tete*/
 .fond{
 	width: 100%;
 	height: auto;
+	margin-bottom: -40px;
 }
 
 /*portefolio texte bienvenue entrée du site*/
 
 .portefolio{ /*section portefolio et bienvenue*/
-	position: sticky;
+	position: absolute;
+	display: block;
 	margin-top: -25%;
+	color: white;
 }
+
+.porte{
+	font-weight: normal;
+	color: #CFE9FF;
+}
+
 
 /*titres*/
 h1{
@@ -42,12 +57,15 @@ h1{
 	font-size: 2em;
 	font-family: "tabarra";
 	margin-top: 10px;
-	color: #69677A;
+	color: #111C93;
 	font-weight: bold;
+	letter-spacing: 5px;
 }
+
 /*PORTEFOLIO*/
 h1.titre{
 	text-align: left;
+	color: white;
 }
 
 /*ancre qui ne cache pas le titre*/
@@ -92,25 +110,33 @@ nav a:hover{
 }
 
 /*Présentation*/
-.presentation{
+.sectionPresentation{ /*row entière*/
+	margin-top: -40px;
+}
+
+.clarisse{ /*juste mon prénom*/
+	font-weight: normal;
+}
+.prenom{ /*mon identité*/
+	font-size: 1.5em;
+	color: #111C93;
+	font-weight: bold;
+}
+
+.presentation{ /*présentation + identité*/
 	text-align: justify;
 	padding: 20px;
 }
 
-.prenom{ /*mon identité*/
-	font-size: 1.5em;
-	color: grey;
-	font-weight: bold;
-}
-
 .lettrine{
 	float:left;
-	font-size:3em; /*taille premiere lettre = lettrine*/
+	font-size:3em; /*taille premiere lettre = lettrine de la présentation*/
 	margin-right:3%;
 	margin-top:-5%;
 }
 
-p.plettrine{
+
+p.plettrine{ /*paragraphe de la présentation*/
 	margin-bottom: 20px;
 }
 
@@ -119,7 +145,7 @@ p.plettrine{
 	background-color: none;
 	text-align: center;
 	align-self: center;
-	border: 3px dotted #e8a1ea;
+	border: 1px solid #eee;
 	padding:20px;
 	margin-bottom: 30px;
 }
@@ -161,20 +187,20 @@ button{
 	padding-right: 20px;
 	margin: 5px;
 	margin-bottom: 15px;
-	color: grey;
+	color: #fff;
 	font-weight: bold;
-	background: #E5E5E5;
+	background: #C15CD5;
 	border-radius: 5px;
 }
 
 button:hover{
-	background: #cbcbcd;
-	color: #64626C;
+	background: #09087C;
+	color: #fff;
 }
 
 button:active{
-	background: #cbcbcd;
-	color: #64626C;
+	background: #09087C;
+	color: #fff;
 }
 
 button:focus{
@@ -206,6 +232,7 @@ div.row[id^="p"]{
 	text-align: center;
 	font-weight: bold;
 	margin-bottom: 30px;
+	letter-spacing: 1px;
 }
 
 /*Fenetres modales*/
@@ -232,13 +259,16 @@ h2{
 
 footer{
 	text-align: center;
-	padding-bottom: 100px;
-	padding-top: 50px;
+	padding-bottom: 80px;
+	padding-top: 30px;
+	background-image: url(../img/fond/footer.png);
+	background-size: cover;
+	background-position: center;
 }
 
 footer hr{
-	margin-top: 30px;
-	margin-bottom: 100px;
+	margin-top: 10px;
+	margin-bottom: 80px;
 }
 
 /*responsive*/
@@ -270,9 +300,52 @@ footer hr{
 	}
 }
 
+@media (max-width: 1030px){
+	.portefolio{ /*section portefolio et bienvenue*/
+		margin-top: -35%;
+	}
+}
+
+@media (max-width: 767px){
+	.portefolio{ /*section portefolio et bienvenue*/
+		position: inherit;
+		margin-top: 0;
+		color: #373544;
+		text-align: center;
+	}
+
+	h1.titre{
+		color: #373544;
+		text-align: center;
+		margin-bottom: 40px;
+		margin-top: 40px;
+	}
+
+	.porte{
+		color:#111C93;
+		font-weight: bold;
+	}
+
+	.textBienvenue{ /*section portefolio et bienvenue*/
+		color: #111C93;
+		display: block;
+		font-weight: bold;
+	}
+
+}
+
 @media(max-width: 500px){
 	.row{
 		margin: 0 !important;
+	}
+
+	h1.titre{
+		margin-bottom: 40px;
+		margin-top: 60px;
+	}
+
+	.portefolio{ /*section portefolio et bienvenue*/
+		margin-bottom: 30px;
 	}
 }
 
