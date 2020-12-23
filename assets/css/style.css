@@ -229,7 +229,7 @@ div.row[id^="p"]{
 	height: auto;
 	width: 100%;
 	background-color: #F6F6F6;
-	text-align: center;
+	text-align: justify;
 	align-items: center;
 	display: flex;
 	flex-direction: row;
@@ -251,11 +251,20 @@ div.row[id^="p"]{
 	letter-spacing: 1px;
 }
 
+.card-body{
+	text-align: center;
+}
+
 /*Fenetres modales*/
 h2{
 	color: #111C93;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	text-align: center;
+}
+
+p.card-text{
+	text-align: center;
 }
 
 .modal-header{
@@ -270,6 +279,11 @@ h2{
 	display: none;
 }
 
+.modal-body{
+	padding: 50px !important;
+	text-align: justify;
+}
+
 .modal-footer{
 	margin-top: 20px;
 	background-color: #EBEBEB;
@@ -279,25 +293,25 @@ h2{
 	border: 1px solid #dadada;
 }
 
-div.boutonLangage{
+div.boutonLangage{ /*section des boutons qui déclarent les langages utilisés dans le projet*/
 	text-align: left;
-	margin-left: 10px;
 	margin-bottom: 20px;
 	margin-top: -10px;
 	color: #fff;
 }
 
-div.boutonLangage p.modalButton{
+div.boutonLangage p.modalButton{ /*style général des boutons déclaratifs des langages*/
 	display: inline-block;
 	padding: 5px;
 	padding-left: 20px;
 	padding-right: 20px;
 	margin: 5px;
+	margin-left: none;
 	font-weight: bold;
 	border-radius: 5px;
 	font-size: 0.9em;
 }
-
+/*toutes les couleurs des boutons des langages présents dans les fenêtres modales*/
 div.boutonLangage p.modalButtonHtml{background-color: #463C4A;}
 div.boutonLangage p.modalButtonCss{background-color: #C42D76;}
 div.boutonLangage p.modalButtonJs{background-color: #2238BD;}
@@ -338,8 +352,19 @@ footer hr{
 	margin-top: 10px;
 	margin-bottom: 80px;
 }
+/*////////////////////////////////////////////////*/
+/*RESPONSIVE MEDIA QUERIES*/
+/*////////////////////////////////////////////////*/
 
-/*responsive*/
+@media (min-width: 2100px){
+	body{
+		font-size: 2em !important;
+	}
+
+	div.container{
+		min-width: 2000px !important;
+	}
+}
 @media (min-width: 1900px){
 
 	.container{
@@ -373,6 +398,11 @@ footer hr{
 
 	.card-body button  {
 		font-size: 0.9em;
+	}
+
+	.card-text{
+		margin-bottom: 50px !important;
+		margin-top: 50px !important;
 	}
 }
 
@@ -414,6 +444,10 @@ footer hr{
 		font-weight: bold;
 	}
 
+	.modal-body{
+	padding: 30px !important;
+	}
+
 }
 
 @media(max-width: 500px){
@@ -423,6 +457,7 @@ footer hr{
 
 	h1{
 		font-weight: bold;
+		font-size: 1.3em;
 	}
 
 	h1.titre{
@@ -443,8 +478,8 @@ footer hr{
 	}
 }
 
-@media(max-width: 320px){
-	h1{
-		font-size: 1.5em;
-	}
+@media(max-width: 350px){
+	.modal-body{
+	padding: 5px !important;
+}	
 }
