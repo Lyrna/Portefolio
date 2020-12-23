@@ -166,6 +166,11 @@ p.plettrine{ /*paragraphe de la présentation*/
 	-webkit-filter: grayscale(0);
 }
 
+.rs:active {
+	filter: grayscale(0);
+	-webkit-filter: grayscale(0);
+}
+
 /*Mes compétences*/
 
 .sectionCompetence{ 
@@ -225,6 +230,9 @@ div.row[id^="p"]{
 	width: 100%;
 	background-color: #F6F6F6;
 	text-align: center;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
 }
 
 .imageVisuel{ /*image du visuel de projet*/
@@ -264,11 +272,41 @@ h2{
 
 .modal-footer{
 	margin-top: 20px;
-	background-color: #F6F6F6;
+	background-color: #EBEBEB;
 }
 
 .image{ /*image fenetre modale*/
 	border: 1px solid #dadada;
+}
+
+div.boutonLangage{
+	text-align: left;
+	margin-left: 10px;
+	margin-bottom: 20px;
+	margin-top: -10px;
+	color: #fff;
+}
+
+div.boutonLangage p.modalButton{
+	display: inline-block;
+	padding: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 5px;
+	font-weight: bold;
+	border-radius: 5px;
+	font-size: 0.9em;
+}
+
+div.boutonLangage p.modalButtonHtml{background-color: #463C4A;}
+div.boutonLangage p.modalButtonCss{background-color: #C42D76;}
+div.boutonLangage p.modalButtonJs{background-color: #2238BD;}
+div.boutonLangage p.modalButtonPhp{background-color: #0B1150;}
+
+
+em{
+	margin-right: 20px !important;
+	font-style: normal;
 }
 
 .card-body button  {
@@ -302,6 +340,13 @@ footer hr{
 }
 
 /*responsive*/
+@media (min-width: 1900px){
+
+	.container{
+		min-width: 1600px !important;
+	}
+}
+
 
 @media (min-width: 1700px){
 
@@ -321,12 +366,13 @@ footer hr{
 	.rs{
 		height: 80px;
 	}
-}
 
-@media (min-width: 1900px){
+	.card{
+		min-height: 320px;
+	}
 
-	.container{
-		min-width: 1600px !important;
+	.card-body button  {
+		font-size: 0.9em;
 	}
 }
 
@@ -375,13 +421,30 @@ footer hr{
 		margin: 0 !important;
 	}
 
+	h1{
+		font-weight: bold;
+	}
+
 	h1.titre{
 		margin-bottom: 40px;
 		margin-top: 60px;
 	}
 
+	.porte{
+		font-weight: normal;
+	}
+
 	.portefolio{ /*section portefolio et bienvenue*/
 		margin-bottom: 30px;
 	}
+
+	.card{
+		margin-bottom: 30px !important;
+	}
 }
 
+@media(max-width: 320px){
+	h1{
+		font-size: 1.5em;
+	}
+}

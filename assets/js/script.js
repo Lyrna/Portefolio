@@ -26,7 +26,6 @@ let htmlOnly = document.querySelector("p button:first-child");
 let cssOnly = document.querySelector("p button:nth-child(2)");
 let jsOnly = document.querySelector("p button:nth-child(3)");
 let phpOnly = document.querySelector("p button:nth-child(4)");
-console.log(htmlOnly);
 
 htmlOnly.addEventListener("click", function() {
 	p1.style.display = "flex";
@@ -92,34 +91,3 @@ showAll.addEventListener("click", function(){
 	i.style.display="flex";
 	}
 });
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////
-// BROUILLON
-///////////////////////////////////////////////////////////////////////////////////////////////
-// let html = document.querySelectorAll("card .html");
-// let css = document.querySelectorAll("card .css");
-// let js = document.querySelectorAll("card .js");
-// let php = document.querySelectorAll("card .php");
-
-// //je récupère les boutons correspondants aux différentes catégories que je veux afficher
-// let buttons = document.querySelectorAll("p button:first-child");
-// //je veux un event sur CHAQUE BOUTON donc j'utilise un forEach (ou pas)
-// for(var n of buttons){
-// 	//j'ajoute un EVENT au CLIC de la souris pour chaque bouton
-// 	n.addEventListener("click", function(){
-// 		//POUR toutes les div des catégories (i c'est chaque itération - donc i = une catégorie)
-// 		for (var i of html){
-// 			//SI l'id de la division correspond au data-category du bouton
-// 			if(this.dataset.category == i.class){
-// 				//ALORS je display le i correspondant au bouton
-// 				i.style.display = "block";
-// 			} 
-
-// 			//SINON les autres div i seront cachées 
-// 			else{
-// 				i.style.display = "none";
-// 			};
-// 		}
-// 	});
-// };
